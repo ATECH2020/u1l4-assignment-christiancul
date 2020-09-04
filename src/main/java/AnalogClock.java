@@ -18,7 +18,7 @@ class AnalogClock {
         int minuteAngle = minute * 30;
 
         //print angle
-        System.out.println(minuteAngle);
+        System.out.print(minuteAngle);
         /*
          *  your code goes here
          */
