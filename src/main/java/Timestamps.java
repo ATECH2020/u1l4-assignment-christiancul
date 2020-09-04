@@ -9,15 +9,11 @@ class Timestamps {
         //Reads ints from user
 
         int hours1 = scanner.nextInt();
-
         int minutes1 = scanner.nextInt();
-
         int seconds1 = scanner.nextInt();
   
         int hours2 = scanner.nextInt();
-
         int minutes2 = scanner.nextInt();
-
         int seconds2 = scanner.nextInt();
         
         //convert change in hrs to secs
