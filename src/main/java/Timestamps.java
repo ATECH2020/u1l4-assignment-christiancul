@@ -36,7 +36,7 @@ class Timestamps {
         int totalSeconds = hoursToSeconds + minutesToSeconds + secondsToSeconds;
 
         //display seconds
-        System.out.println(totalSeconds);
+        System.out.print(totalSeconds);
         // closing the scanner object
         scanner.close();
     }
