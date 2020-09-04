@@ -13,9 +13,9 @@ class AnalogClock {
         int hr = (int) ((hrAngle / 360.0) * 12.0);
 
         //subtract hours by hr (rounded) in order to get ratio for minutes, convert ratio into 1-12 on the clock
-        int minute = (int) ((((hrAngle / 360.0) * 12.0) - hr) * 12);
+        double minute = ((((hrAngle / 360.0) * 12.0) - hr) * 12);
         //convert clock num to angle
-        int minuteAngle = minute * 30;
+        int minuteAngle = (int)(minute * 30.0);
 
         //print angle
         System.out.print(minuteAngle);
