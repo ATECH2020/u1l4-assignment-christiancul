@@ -9,19 +9,17 @@ class AnalogClock {
         //Reads ints from users
         int hrAngle = scanner.nextInt();
 
-        //calc hr (rounded)
+        //calc hr (cut off decimal)
         int hr = (int) ((hrAngle / 360.0) * 12.0);
 
-        //subtract hours by hr (rounded) in order to get ratio for minutes, convert ratio into 1-12 on the clock
+        //subtract hours by hr (cut of decimal) in order to get ratio for minutes, use ratio to get 1-12 (numbers on the clock)
         double minute = ((((hrAngle / 360.0) * 12.0) - hr) * 12);
-        //convert clock num to angle
-        int minuteAngle = (int)(minute * 30.0);
+        
+        //convert clock number to angle 
+        int minuteAngle = (int) Math.round((minute * 30.0));
 
         //print angle
         System.out.print(minuteAngle);
-        /*
-         *  your code goes here
-         */
 
         // closing the scanner object
         scanner.close();
