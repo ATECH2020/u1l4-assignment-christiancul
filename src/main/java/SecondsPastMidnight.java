@@ -15,10 +15,12 @@ class SecondsPastMidnight {
         //Convert minutes into hours
         int hours = minutes / 60;
 
+        // closing the scanner object
+        scanner.close();
+
         //Print out hrs && minutes passed
         //System.out.printf("%d hrs or %d minutes has passed\n", hours, minutes);
         System.out.println(hours + " " + minutes);
-        // closing the scanner object
-        scanner.close();
+        
     }
 }
