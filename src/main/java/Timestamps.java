@@ -34,10 +34,12 @@ class Timestamps {
 
         //add all seconds together
         int totalSeconds = hoursToSeconds + minutesToSeconds + secondsToSeconds;
-
-        //display seconds
-        System.out.print(totalSeconds);
+        
         // closing the scanner object
         scanner.close();
+        
+        //display seconds
+        System.out.print(totalSeconds);
+        
     }
 }
