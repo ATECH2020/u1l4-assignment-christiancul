@@ -20,7 +20,7 @@ class SecondsPastMidnight {
 
         //Print out hrs && minutes passed
         //System.out.printf("%d hrs or %d minutes has passed\n", hours, minutes);
-        System.out.println(hours + " " + minutes);
+        System.out.print(hours + " " + minutes);
         
     }
 }
